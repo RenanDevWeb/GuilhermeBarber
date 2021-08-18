@@ -1,8 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ubuntu:wght@400;700&display=swap');
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Ubuntu', sans-serif; */
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif; 
 }
 
 section{
@@ -22,9 +28,10 @@ nav{
 }
 
 nav h1{
-    margin:  15px 10px;
+    margin:  15px 16px;
     font-size: 2.2rem;
     color: #DAA520;
+    font-family: 'Great Vibes', cursive
 }
 
 nav .box-medias{
@@ -54,6 +61,7 @@ nav .box-medias ul{
 .box-nav li{
     margin-right: 20px;
     font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif; 
 }
 .box-nav li:hover{
     color: #DAA520; 
@@ -99,6 +107,7 @@ nav .box-medias ul{
     margin: 10px 0;
     font-size: 2.2rem;
     color: #DAA520;
+    font-family: 'Ubuntu', sans-serif; 
 
 }
 
