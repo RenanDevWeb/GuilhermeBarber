@@ -10,11 +10,10 @@
 </head>
 <body>
     <nav>
-       
         <h1>Guilherme Henrique</h1>
-        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
             <path  fill="rgba(0,0,0,1)" d="M64.4,1.9C64.4,29.1,32.2,58.2,2.8,58.2C-26.7,58.2,-53.3,29.1,-53.3,1.9C-53.3,-25.2,-26.7,-50.4,2.8,-50.4C32.2,-50.4,64.4,-25.2,64.4,1.9Z" transform="translate(100 100)" />
-          </svg>
+          </svg> -->
     <div class="box-medias">
         <ul class="box-nav">
             <li>Serviços</li>
@@ -22,15 +21,26 @@
             <li>Sobre</li>
         </ul>
             <ul class="box-medias-icons">
-                <li><i class="fab fa-instagram-square" style="color: purple;"></i></li>
-                <li><i class="fab fa-facebook-square" style="color: blue;"></i></li>
-                <li><i class="fab fa-whatsapp-square" style="color: green;"></i></li>
+                <li><a href="#"><img src="./img/facebook (1).png" alt="facebook"></a></li>
+                <li><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a></li>
             </ul>
         </div>
+
+        <img  id="menu" class="menu" src="./img/menu.png" alt="">
     </nav>
 
     <section>
         <img src="./img/barber.jpg" alt="">
     </section>
+
+
+<script>
+    const menu = document.getElementById('menu')
+    menu.addEventListener('click', () => {
+        alert("clicou")
+    })
+</script>
+
 </body>
 </html>
