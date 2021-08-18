@@ -151,6 +151,7 @@ nav .box-medias ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Great Vibes', cursive
     }
 
     .menu{
