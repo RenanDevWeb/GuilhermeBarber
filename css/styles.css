@@ -142,34 +142,50 @@ nav .box-medias ul{
 
 .galeria{
     width: 100%;
-    background-color: #070707;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background: rgba(255, 255,255, 0.3);
+    background-image: url('../img/barber.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+   
+  
+   
 }
 .galeria h2 {
     margin-top: 10px;
     font-size: 2.2rem;
     color: #DAA520;
     font-family: 'Ubuntu', sans-serif; 
+
 }
 
 .galeria .galeria-grid{
     display: flex;
     justify-content: center;
     align-items: center ;
+    opacity: 1;
 }
 .galeria .galeria-grid .galeria-item{
    margin: 30px;
+   
+
 }
 .galeria .galeria-grid .galeria-item img{
     width: 100%;
     height: 100%;
     margin-right: 30px;
+    opacity: 0.9;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
+.galeria .galeria-grid .galeria-item img:hover{
 
+    opacity: 1;
+}
 .quemsou{
     width: 100%;
     display: flex;
@@ -209,6 +225,13 @@ nav .box-medias ul{
     text-align: justify;
     width: 40%;
 }
+
+.move-to-left{animation:moveToleft 3s linear}
+
+
+@keyframes fadeout{from{opacity:0}to{opacity:1}}
+@keyframes move{from{opacity:0;transform:translateX(-35%)}to{opacity:1;transform:translateX(0)}}@keyframes moveToRigth{from{opacity:0;transform:translateX(-800%)}to{opacity:1;transform:translateX(0)}}@keyframes moveToleft{from{opacity:0;transform:translateX(200%)}to{opacity:1;transform:translateX(0)}}@media only screen and (max-width:440px){header h1{color:#fff;margin-top:16px;font-size:26px;font-family:Roboto,sans-serif;text-transform:uppercase}}
+
 
 
 
