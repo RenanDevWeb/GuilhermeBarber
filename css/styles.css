@@ -128,6 +128,7 @@ nav .box-medias ul{
     border-radius:  20px;
     background-color: #FCFBFB;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 .servicos .grid-servicos .card img{
     width: 120px;
@@ -136,6 +137,77 @@ nav .box-medias ul{
 .servicos .grid-servicos .card p{
     font-size: 1.5rem;
     margin-top: 5px;
+}
+
+
+.galeria{
+    width: 100%;
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.galeria h2 {
+    margin-top: 10px;
+    font-size: 2.2rem;
+    color: #DAA520;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.galeria .galeria-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.galeria .galeria-grid .galeria-item{
+   margin: 30px;
+}
+.galeria .galeria-grid .galeria-item img{
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.quemsou{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: #434343;
+    padding: 60px;
+}
+
+.quemsou .quemsou-div{
+    display: flex;
+    margin-top: 40px;
+}
+
+.quemsou .quemsou-div img{
+    width: 50%;
+    height: 290px;
+
+}
+.quemsou .quemsou-div .dizeres{
+    width: 50%;
+    margin-top: 40px;
+    display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+.quemsou .quemsou-div .dizeres h2{
+    font-size: 2.2rem;
+    color: #DAA520;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.quemsou .quemsou-div .dizeres P{
+    font-size: 1.2rem;
+    color: #DAA520;
+    font-family: 'Ubuntu', sans-serif; 
+    text-align: justify;
+    width: 40%;
 }
 
 
@@ -191,11 +263,11 @@ nav .box-medias ul{
 
 .servicos .grid-servicos .card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 340px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius:  20px;
     background-color: #FCFBFB;
     margin: 10px;
@@ -209,6 +281,36 @@ nav .box-medias ul{
     margin-top: 5px;
 }
 
+.gaeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria h2 {
+    margin-top: 10px;
+    font-size: 2.2rem;
+    color: #DAA520;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.galeria .galeria-grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+}
+.galeria .galeria-grid .galeria-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria .galeria-grid .galeria-item img{
+    width: 90%;
+    height: 90%;
+}
 
 
 
@@ -254,5 +356,37 @@ nav .box-medias ul{
         margin-top: 5px;
     }
     
+
+    
+.gaeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria h2 {
+    margin-top: 10px;
+    font-size: 2.2rem;
+    color: #DAA520;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.galeria .galeria-grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+}
+.galeria .galeria-grid .galeria-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria .galeria-grid .galeria-item img{
+    width: 90%;
+    height: 90%;
+}
     
 }
