@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Guilhermer Barber</title>
+    <title>Guilherme Barber</title>
 </head>
 <body>
     <section>
     <nav>
-        <h1>Guilherme Henrique</h1>
-        <!-- <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-            <path  fill="rgba(0,0,0,1)" d="M64.4,1.9C64.4,29.1,32.2,58.2,2.8,58.2C-26.7,58.2,-53.3,29.1,-53.3,1.9C-53.3,-25.2,-26.7,-50.4,2.8,-50.4C32.2,-50.4,64.4,-25.2,64.4,1.9Z" transform="translate(100 100)" />
-          </svg> -->
+        <h1 id="title" class="title">Guilheme Henrique</h1>
+
     <div class="box-medias">
         <ul class="box-nav">
             <li>Serviços</li>
@@ -22,18 +20,28 @@
             <li>Sobre</li>
         </ul>
             <ul class="box-medias-icons">
-                <li><a href="#"><img src="./img/facebook (1).png" alt="facebook"></a></li>
+                <li><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
                 <li><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
                 <li><a href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a></li>
             </ul>
         </div>
 
-        <img  id="menu" class="menu" src="./img/menu.png" alt="">
+        <img  id="menu" class="menu" src="./img/menu.png" alt="menu">
     </nav>
 
  
-        <div class="barberfoto"></div>
+    <div id="menu">
+        <ul class="box-menu" id="box-menu">
+            <li>Serviços</li>
+            <li>Galeria</li>
+            <li>Sobre</li>
+        </ul>
+    
+
+    <div class="barberfoto"></div>
     </section>
+    
+    </div>
 
 
     <section class="servicos">
@@ -46,18 +54,18 @@
 
 
             <div class="card">
-                <img src="./img/tesoura.png" alt="">
-                <p>Corte Masculino</p>
+                <img src="./img/Crianca.png" alt="Crianca">
+                <p>Corte Infantil</p>
             </div>
 
             <div class="card">
-                <img src="./img/tesoura.png" alt="">
-                <p>Corte Masculino</p>
+                <img src="./img/barba.png" alt="barba">
+                <p>Corte Barba</p>
             </div>
 
             <div class="card">
-                <img src="./img/tesoura.png" alt="">
-                <p>Corte Masculino</p>
+                <img src="./img/tesoura.png" alt="muito mais">
+                <p>Muito Mais</p>
             </div>
 
         </div>
@@ -68,24 +76,24 @@
 
             <div class="galeria-grid">
                     <div class="galeria-item">
-                        <img src="./img/barberr.jpg" alt="">
+                        <img src="./img/corte1.jpg" alt="">
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/barberr.jpg" alt="">
+                        <img src="./img/corte2.jpg" alt="">
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/barberr.jpg" alt="">
+                        <img src="./img/corte3.jpg  " alt="">
                     </div>
             </div>
             <div class="galeria-grid">
                     <div class="galeria-item">
-                        <img src="./img/barberr.jpg" alt="">
+                        <img src="./img/corte4.jpg" alt="">
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/barberr.jpg" alt="">
+                        <img src="./img/corte5.jpg" alt="">
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/barberr.jpg" alt="">
+                        <img src="./img/corte6.jpg" alt="">
                     </div>
             </div>
 
@@ -93,7 +101,7 @@
 
     <section class="quemsou">
         <div class="quemsou-div">
-            <img src="./img/perfilteste.png" alt="">
+            <img src="./img/perfil.jpg" alt="">
             <div class="dizeres">
             <h2>Quem sou eu </h2>
             <p>Nascido em São Bernado do Campo, Sou o <span>Guilheme Henrique</span> apaixonado por cabelos e estetica no geral.
@@ -112,7 +120,7 @@
         <h3>Guilherme Henrique</h3>
     
             <ul class="">
-                <li><a href="#"><img src="./img/facebook (1).png" alt="facebook"></a></li>
+                <li><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
                 <li><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
                 <li><a href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a></li>
             </ul>
@@ -122,10 +130,33 @@
 
 
 <script>
-    const menu = document.getElementById('menu')
-    menu.addEventListener('click', () => {
-        alert("clicou")
-    })
+    // const menu = document.getElementById('menu')
+    // let toogle = false
+    //  menu.addEventListener('click', function toogleButtom(toogle){
+    //   const menuNav  = document.getElementById('box-menu')
+    //      if(toogle == false){
+    //           menuNav.style.display = "none"
+    //         toogle = true
+    //      }else 
+    //         if(toogle == true){
+    //             menuNav.style.display = "flex"
+    //             toogle = false
+    //         }
+    //  })
+
+    //   let title = document.getElementById("title").innerText
+    //         const count = 1
+    //        const tituloSeparado = title.split("")
+    //         title.innerHTML = ''
+    //         tituloSeparado.forEach((letra,i) => {
+    //             setTimeout(() => {
+    //                 console.log(letra)
+    //             }, 3000 + i + count )
+    //     });
+       
+
+
+
 </script>
 
 </body>

@@ -48,11 +48,22 @@ nav .box-medias ul{
     color: #fff;
 }
 
+
 .menu{
     width: 40px;
     height: 40px;
     display: none;
 }
+.box-menu{
+    width: 100%;
+    font-size: 2.2rem;
+    display: none;
+    flex-direction: column;
+}
+.box-menu li{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(67,67,67,1) 100%);
+    color: #fff;
+    }
 
 .box-nav{
     font-size: 1.5rem;
