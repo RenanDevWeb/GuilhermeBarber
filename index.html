@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
     <title>Guilherme Barber</title>
 </head>
 <body>
     <section>
     <nav>
-        <h1 id="title" class="title">Guilheme Henrique</h1>
+        <h1 id="title" class="title">Guilherme Henrique</h1>
 
     <div class="box-medias">
-        <ul class="box-nav">
-            <li>Serviços</li>
-            <li>Galeria</li>
-            <li>Sobre</li>
-        </ul>
             <ul class="box-medias-icons">
                 <li><a href="https://www.instagram.com/eubarbeirogui/"><img src="./img/instagram.png" alt="instagram"></a></li>
                 <li><a href="https://wa.me/5511977433318"><img src="./img/Whatsapp.png" alt="whatsapp"></a></li>
             </ul>
+
+            <ul class="box-nav">
+                <li>Serviços</li>
+                <li>Galeria</li>
+                <li>Sobre</li>
+            </ul>
         </div>
 
-        <a href="https://www.instagram.com/eubarbeirogui/"><img  id="menu" class="menu" src="./img/instagram.png" alt="menu"></a>
+        <button id="buttonMenu" onclick="showMenu()"></button>
+   
+        
     </nav>
 
  
-    <div id="menu">
+  
         <ul class="box-menu" id="box-menu">
             <li>Serviços</li>
             <li>Galeria</li>
@@ -47,7 +50,7 @@
         <h2>Serviços</h2>
         <div class="grid-servicos move-to-left">
             <div class="card">
-                <img src="./img/tesoura.png" alt="">
+                <img src="./img/tesoura.png" alt="Corte Masculino">
                 <p>Corte Masculino</p>
             </div>
 
@@ -59,12 +62,12 @@
 
             <div class="card">
                 <img src="./img/barba.png" alt="barba">
-                <p>Corte Barba</p>
+                <p>Barba</p>
             </div>
 
             <div class="card">
-                <img src="./img/tesoura.png" alt="muito mais">
-                <p>Muito Mais</p>
+                <img src="./img/cabeloFemino.png" alt="Corte Feminino">
+                <p>Corte Feminino</p>
             </div>
 
         </div>
@@ -75,24 +78,24 @@
 
             <div class="galeria-grid">
                     <div class="galeria-item">
-                        <img src="./img/corte1.jpg" alt="">
+                        <a href="https://www.instagram.com/eubarbeirogui/">   <img src="./img/corte1.jpg" alt=""> </a>
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/corte2.jpg" alt="corte cabelo">
+                        <a href="https://www.instagram.com/eubarbeirogui/">   <img src="./img/corte2.jpg" alt="corte cabelo"> </a>
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/corte3.jpg  " alt="corte cabelo">
+                        <a href="https://www.instagram.com/eubarbeirogui/">  <img src="./img/corte3.jpg  " alt="corte cabelo"></a>
                     </div>
             </div>
             <div class="galeria-grid">
                     <div class="galeria-item">
-                        <img src="./img/corte4.jpg" alt="corte cabelo">
+                        <a href="https://www.instagram.com/eubarbeirogui/">    <img src="./img/corte4.jpg" alt="corte cabelo"></a>
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/corte5.jpg" alt="corte cabelo">
+                        <a href="https://www.instagram.com/eubarbeirogui/">  <img src="./img/corte5.jpg" alt="corte cabelo"></a>
                     </div>
                     <div class="galeria-item">
-                        <img src="./img/corte6.jpg" alt="corte cabelo">
+                      <a href="https://www.instagram.com/eubarbeirogui/"> <img src="./img/corte6.jpg" alt="corte cabelo"></a>
                     </div>
             </div>
 
@@ -103,12 +106,13 @@
             <img src="./img/perfil.jpg" alt="perfil">
             <div class="dizeres">
             <h2>Quem sou eu </h2>
-            <p>Nascido em São Paulo, Sou o <span>Guilheme Henrique</span>  apaixonado por minha profissão, cabelo, barba e também trabalhar com a autoestima das pessoas.<br>
+            <p>Nascido em São Paulo, Sou o <span>Guilherme Henrique</span> apaixonado por minha profissão, cabelo, barba e também trabalhar com a autoestima das pessoas.<br>
                 Estudioso de diversos tipos de cortes de cabelos e barba.
                <br>  
                <br>
-               <span class="goldColor"> <a href="ttps://wa.me/5511977433318" style=" color: #DAA520; text-decoration:underline; font-size: 1ren;">Agende</a> m horário comigo e permita-se conhecer o meu trabalho.</span>
+               <span class="goldColor">Agende um horário comigo e permita-se conhecer o meu trabalho.</span>
             </p>
+            <a href="https://wa.me/5511977433318" class="agendeButton">Agendar</a>
         </div>
             </div>
     </section>
@@ -127,35 +131,7 @@
 </footer>
 
 
-<script>
-    // const menu = document.getElementById('menu')
-    // let toogle = false
-    //  menu.addEventListener('click', function toogleButtom(toogle){
-    //   const menuNav  = document.getElementById('box-menu')
-    //      if(toogle == false){
-    //           menuNav.style.display = "none"
-    //         toogle = true
-    //      }else 
-    //         if(toogle == true){
-    //             menuNav.style.display = "flex"
-    //             toogle = false
-    //         }
-    //  })
 
-    //   let title = document.getElementById("title").innerText
-    //         const count = 1
-    //        const tituloSeparado = title.split("")
-    //         title.innerHTML = ''
-    //         tituloSeparado.forEach((letra,i) => {
-    //             setTimeout(() => {
-    //                 console.log(letra)
-    //             }, 3000 + i + count )
-    //     });
-       
-
-
-
-</script>
 
 </body>
 </html>

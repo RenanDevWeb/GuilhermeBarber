@@ -11,9 +11,6 @@ font-family: 'Ubuntu', sans-serif; */
     font-family: 'Ubuntu', sans-serif; 
 }
 
-section{
-    margin: 0;
-}
 a{
     text-decoration: none;
     cursor: pointer
@@ -21,14 +18,14 @@ a{
 
 
 nav{
-
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(67,67,67,1) 100%);
 }
 
 nav h1{
-    margin:  15px 16px;
+    margin:  15px 20px;
     font-size: 2.2rem;
     color: #DAA520;
     font-family: 'Great Vibes', cursive
@@ -37,7 +34,7 @@ nav h1{
 nav .box-medias{
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-left: 80px;
 }
 
 
@@ -49,25 +46,43 @@ nav .box-medias ul{
 }
 
 
-.menu{
-    width: 40px;
-    height: 40px;
-    display: none;
-}
+
+
+
 .box-menu{
     width: 100%;
     font-size: 2.2rem;
     display: none;
     flex-direction: column;
 }
+
+button {
+    background-image: url("../img/menu.png");
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: none;
+
+}
+
+.box-menu-show{
+    display: flex;
+}
+
 .box-menu li{
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(67,67,67,1) 100%);
     color: #fff;
     }
 
 .box-nav{
+    display: flex;
     font-size: 1.5rem;
-    margin-right: 65px;
+    margin-left: 65px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 .box-nav li{
     margin-right: 20px;
@@ -158,12 +173,10 @@ nav .box-medias ul{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: rgba(255, 255,255, 0.3);
     background-image: url('../img/barber.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-clip: content-box;
    
   
    
@@ -184,19 +197,18 @@ nav .box-medias ul{
 }
 .galeria .galeria-grid .galeria-item{
    margin: 30px;
-   
 
 }
 .galeria .galeria-grid .galeria-item img{
     width: 100%;
     height: 100%;
     margin-right: 30px;
-    opacity: 0.9;
     border: 2px solid #000;
     border-radius: 10px;
 }
+
 .galeria .galeria-grid .galeria-item img:hover{
-    opacity: 1;
+    transform: translateY(-10px);
 }
 .quemsou{
     display: flex;
@@ -248,6 +260,14 @@ nav .box-medias ul{
     margin-bottom: 20px;
 }
 
+
+.agendeButton{
+    background-color:green;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
 footer{
         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(67,67,67,1) 100%); 
         display: flex;
@@ -308,7 +328,7 @@ footer p{
 
 
 
-@media (min-width: 220px) and (max-width: 740px) { 
+@media (min-width: 220px) and (max-width: 630px) { 
     nav{
         display: flex;
         justify-content: space-between;
@@ -344,6 +364,11 @@ footer p{
     
 }
     
+
+.menuu{
+    display: flex;
+}
+
 .servicos{
     width: 100%;
     background-color: #2C2828;
@@ -470,22 +495,23 @@ footer p{
  }
 
 
-@media (min-width: 741px) and (max-width: 820px){
+@media (min-width: 631px) and (max-width: 820px){
     
     nav h1{
         font-size: 1.9rem;
         margin-left: 18px;
     }
 
-   nav .box-medias .box-nav{
+   /* nav .box-medias .box-nav{
         display: none;
-    }
+    } */
 
     .barberfoto{
         width: 100%;
         height: 55vh;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .servicos .grid-servicos .card{
@@ -511,11 +537,6 @@ footer p{
     
 
     
-.gaeria{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .galeria h2 {
     margin-top: 10px;
